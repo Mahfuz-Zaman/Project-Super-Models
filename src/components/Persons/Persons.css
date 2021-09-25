@@ -1,0 +1,10 @@
+.person-img {
+  height: 150px;
+  width: 100px;
+  border-radius: 10px;
+}
+.cd-hvr:hover {
+  background-color: rgb(231, 220, 220);
+  transition: 1s;
+  transform: scaleY(1.1);
+}

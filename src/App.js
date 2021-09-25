@@ -1,24 +1,61 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './components/Header/Header';
+import Persons from './components/Persons/Persons';
+import { useEffect, useState } from 'react';
+import UserInfo from './components/UserInfo/UserInfo';
+
 
 function App() {
+  const [persons, setPersons] = useState([])
+  const [userInfo, setUserInfo] = useState([])
+
+  const handleUserInfo = (user) => {
+    const newUser = [...userInfo, user]
+    setUserInfo(newUser)
+
+  }
+
+  useEffect(() => {
+    fetch('fakeData.JSON')
+      .then(res => res.json())
+      .then(data => setPersons(data));
+  }, [])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div>
+        <Header></Header>
+      </div>
+      <div className="container body">
+        <div className="row ">
+          <div className="col-md-9 left-side ">
+            <div className="row">
+              {
+                persons.map((person) => (<Persons
+
+
+                  person={person}
+                  handleUserInfo={handleUserInfo}
+
+
+                ></Persons>))
+              }
+            </div>
+          </div>
+          <div className="col-md-3 right-side ">
+            <div>
+              <UserInfo
+                userInfo={userInfo}
+              >
+
+              </UserInfo>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </>
   );
 }
 
