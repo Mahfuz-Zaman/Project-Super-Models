@@ -4,8 +4,37 @@ import React from 'react';
 const Header = () => {
     return (
         <div>
-            <div className="text-center header-part container py-5 mb-5">
-                <h1>Hire World Class Models</h1>
+            <div className="text-center header-part container " >
+                <nav className="navbar navbar-expand-lg navbar-light bg-danger mt-0 w-100%">
+                    <div className="container-fluid">
+                        <h5 className="navbar-brand">Models.net</h5>
+                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span className="navbar-toggler-icon"></span>
+                        </button>
+                        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li className="nav-item">
+                                    <p className="nav-link active" aria-current="page">Home</p>
+                                </li>
+                                <li className="nav-item">
+                                    <p className="nav-link">
+                                        Rankings</p>
+                                </li>
+                                <li className="nav-item">
+                                    <p className="nav-link ">
+                                        Agencies</p>
+                                </li>
+                            </ul>
+                            <form className="d-flex">
+                                <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                                <button className="btn btn-outline-dark" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+                <h1>A trusted platform
+                    for the entire
+                    fashion community</h1>
                 <p>The newcomers who made an impact were a diverse group of beauties from around the globe</p>
                 <h2>Total Budget : $ 150 Million</h2>
             </div>
