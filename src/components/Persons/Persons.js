@@ -23,7 +23,7 @@ const Persons = (props) => {
                 </div>
                 <button
                     onClick={() => props.handleUserInfo(props.person)}
-                    className="btn btn-danger"><i class="fas fa-id-card-alt"></i> Add to List</button>
+                    className="btn btn-danger"><i className="fas fa-id-card-alt"></i> Add to List</button>
             </div>
 
         </div>

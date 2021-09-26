@@ -4,7 +4,7 @@
   border-radius: 10px;
 }
 .cd-hvr:hover {
-  background-color: rgb(231, 220, 220);
+  background-color: rgb(169, 238, 250);
   transition: 1s;
   transform: scaleY(1.1);
 }

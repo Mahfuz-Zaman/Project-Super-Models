@@ -10,7 +10,7 @@ const UserInfo = (props) => {
     return (
         <>
             <div>
-                <h3><i class="fas fa-user-alt">Members:</i> {userInfo.length}</h3>
+                <h3><i className="fas fa-user-alt"></i>Members: {userInfo.length}</h3>
                 <h5>Total Salary: $ {totalSalary}</h5>
             </div>
             <div>

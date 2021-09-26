@@ -33,7 +33,7 @@ function App() {
               {
                 persons.map((person) => (<Persons
 
-
+                  key={person.id}
                   person={person}
                   handleUserInfo={handleUserInfo}
 
