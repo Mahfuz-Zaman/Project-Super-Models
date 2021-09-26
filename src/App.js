@@ -36,8 +36,6 @@ function App() {
                   key={person.id}
                   person={person}
                   handleUserInfo={handleUserInfo}
-
-
                 ></Persons>))
               }
             </div>

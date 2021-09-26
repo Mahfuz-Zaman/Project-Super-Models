@@ -17,7 +17,7 @@ const UserInfo = (props) => {
                 <h4>Hired Model Name</h4>
                 <ul>
                     {
-                        userInfo.map(user => <li className="fas fa-address-card list">  {user.name}</li>)
+                        userInfo.map((user, i) => <li key={i} className="fas fa-address-card list">  {user.name}</li>)
                     }
                 </ul>
             </div>
