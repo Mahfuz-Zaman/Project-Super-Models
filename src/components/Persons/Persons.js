@@ -23,11 +23,15 @@ const Persons = (props) => {
                 </div>
                 <div className="d-flex justify-content-around">
                     <h1>
-                        <i className="fab fa-facebook-square" ></i>
+                        <a href="https://www.facebook.com/07.69pain"> <i className="fab fa-facebook-square fa-1x"></i></a>
                     </h1>
                     <h1>
-                        <i className="fab fa-youtube"></i>
+                        <a href="https://www.youtube.com/channel/UCefesuYRZm1lQZgdTKbBNoQ/about"> <i className="fab fa-youtube-square text-danger fa-1x"></i></a>
                     </h1>
+                    <h1>
+                        <a href="https://twitter.com/MahfuzZaman4"> <i className="fab fa-twitter-square fa-1x"></i></a>
+                    </h1>
+
                 </div>
                 <button
                     onClick={() => props.handleUserInfo(props.person)}
