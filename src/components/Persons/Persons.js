@@ -21,9 +21,18 @@ const Persons = (props) => {
                     </div>
                     <h6 className="card-text mb-5">Email:<small>{email}</small></h6>
                 </div>
+                <div className="d-flex justify-content-around">
+                    <h1>
+                        <i className="fab fa-facebook-square" ></i>
+                    </h1>
+                    <h1>
+                        <i className="fab fa-youtube"></i>
+                    </h1>
+                </div>
                 <button
                     onClick={() => props.handleUserInfo(props.person)}
                     className="btn btn-danger"><i className="fas fa-id-card-alt"></i> Add to List</button>
+
             </div>
 
         </div>
