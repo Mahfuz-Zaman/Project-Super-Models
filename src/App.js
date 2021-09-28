@@ -11,9 +11,13 @@ function App() {
   const [userInfo, setUserInfo] = useState([])
 
   const handleUserInfo = (user) => {
-    const newUser = [...userInfo, user]
-    setUserInfo(newUser)
-
+    if (userInfo.indexOf(user) === -1) {
+      const newUser = [...userInfo, user]
+      setUserInfo(newUser)
+    }
+    else {
+      alert('you can not hire same model 2 times');
+    }
   }
 
   useEffect(() => {
@@ -56,5 +60,6 @@ function App() {
     </>
   );
 }
+
 
 export default App;

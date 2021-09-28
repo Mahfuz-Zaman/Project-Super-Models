@@ -7,7 +7,7 @@ const Header = () => {
             <div className="text-center header-part container " >
                 <nav className="navbar navbar-expand-lg navbar-light bg-danger mt-0 fixed-top">
                     <div className="container-fluid">
-                        <h5 className="navbar-brand text-white fw-bold">Models.net</h5>
+                        <h5 className="navbar-brand text-white fw-bold ">Models.net</h5>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
